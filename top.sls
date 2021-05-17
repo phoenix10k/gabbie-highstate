@@ -1,6 +1,6 @@
 base:
   '*':
-    - base
+    - common
     - salt.minion
   'G@os:Raspbian':
     - raspberry-pi.common
@@ -11,3 +11,6 @@ base:
     - barrier.server
   'anima':
     - salt.master
+    - raspberry-pi.buttonshim
+    - raspberry-pi.ledshim
+    - raspberry-pi.ht16k33
